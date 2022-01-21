@@ -27,5 +27,9 @@ public class CustomerRestController {
 		List<Customer> customers=customerdao.getCustomers();		
 		return customers;
 	}
+	@GetMapping("/name")
+	public String getName(){		
+		return "Shubhendu Pal";
+	}
 
 }
